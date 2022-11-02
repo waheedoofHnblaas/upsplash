@@ -2,18 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
-import 'package:lottie/lottie.dart';
 import 'package:unslash/controller/home_controllers/getimages_controller.dart';
 
-import '../../core/constant/colors.dart';
-import '../../core/constant/imagesassets.dart';
 
 class AppEroor404Widget extends StatelessWidget {
   AppEroor404Widget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<HomeImagesControllerImp>(
+    return GetBuilder<HomeImageControllerImp>(
       builder: (controller) {
         return Center(
           child: Column(

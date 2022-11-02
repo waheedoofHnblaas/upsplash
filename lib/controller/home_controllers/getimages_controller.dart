@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:unslash/core/class/statusrequest.dart';
@@ -14,7 +12,7 @@ abstract class HomeImagesController extends GetxController {
   toData(ImageModel imageModel);
 }
 
-class HomeImagesControllerImp extends HomeImagesController {
+class HomeImageControllerImp extends HomeImagesController {
   MyServices myServices = Get.find();
   StatusRequest? statusRequest = StatusRequest.none;
   final HomeData homeData = HomeData(Get.find());
@@ -25,10 +23,11 @@ class HomeImagesControllerImp extends HomeImagesController {
 
   @override
   Future<void> onInit() async {
+    super.onInit();
     scrollController.addListener(() async {
-      print('scrollController.position.pixels ');
+      print('pixels ');
       print(scrollController.position.pixels);
-      print('scrollController.position.maxScrollExtent ');
+      print('maxScrollExtent ');
       print(scrollController.position.maxScrollExtent);
       if (scrollController.position.pixels ==
               scrollController.position.maxScrollExtent &&
@@ -39,7 +38,6 @@ class HomeImagesControllerImp extends HomeImagesController {
     });
     await getImages();
 
-    super.onInit();
   }
 
   @override
@@ -90,13 +88,11 @@ class HomeImagesControllerImp extends HomeImagesController {
     return imagesList;
   }
 
-  @override
-  // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
-  goToItemDataPage(ItemsModel) {
-    //  Get.toNamed(AppRoute.itemdata, arguments: {'item': ItemsModel});
-  }
 
+
+  @override
   void toData(ImageModel imageModel) {
-    Get.toNamed(AppRoute.imagedata,arguments: {ImageModel :imageModel});
+    print(imageModel);
+    Get.toNamed(AppRoute.imagedata,arguments: {ImageModel : imageModel});
   }
 }

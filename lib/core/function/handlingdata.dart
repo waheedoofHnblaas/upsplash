@@ -1,7 +1,3 @@
-
-
-
-
 import 'package:unslash/core/class/statusrequest.dart';
 
 handlingData(res){

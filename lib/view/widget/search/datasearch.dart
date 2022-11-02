@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'package:unslash/view/widget/search/searchfilter.dart';
 
 class DataSearch extends SearchDelegate {

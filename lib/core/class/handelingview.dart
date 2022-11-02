@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
-import 'package:lottie/lottie.dart';
 import 'package:unslash/core/class/statusrequest.dart';
 import 'package:unslash/view/widget/apperror404widget.dart';
 
@@ -19,7 +16,7 @@ class HandelingView extends StatelessWidget {
     } else if (statusRequest == StatusRequest.success) {
       return widget;
     } else if (statusRequest == StatusRequest.failure) {
-      return const Text('no data');
+      return Center(child: const Text('no data'));
     } else {
       return AppEroor404Widget();
     }

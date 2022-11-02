@@ -1,6 +1,4 @@
-
 import 'dart:io';
-
 Future<bool> checkInternet()async{
   try{
     var result =await InternetAddress.lookup('google.com');

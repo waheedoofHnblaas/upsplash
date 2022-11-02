@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:unslash/core/constant/approutes.dart';
 import 'package:unslash/initialbinding.dart';
 import 'package:unslash/routes.dart';
 

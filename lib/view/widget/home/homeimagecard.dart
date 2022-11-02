@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:unslash/controller/home_controllers/getimages_controller.dart';
-import 'package:unslash/controller/home_controllers/imagesdata_controller.dart';
 import 'package:unslash/data/model/imageModel.dart';
 import 'package:get/get.dart';
 
 class HomeImageCard extends StatelessWidget {
   HomeImageCard({required this.imageModel, Key? key}) : super(key: key);
 
-  final ImageModel imageModel;
+   ImageModel imageModel;
 
   @override
   Widget build(BuildContext context) {
-    HomeImagesControllerImp homeImagesControllerImp = Get.find();
+    HomeImageControllerImp homeImagesControllerImp = Get.find();
     return InkWell(
       onTap: () {
         homeImagesControllerImp.toData(imageModel);
@@ -40,18 +39,33 @@ class HomeImageCard extends StatelessWidget {
               ),
               child: Center(
                   child: Row(
-
                 children: [
-                  IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.favorite_border,
-                        color: Colors.white,
-                      )),
-                 const  SizedBox(width: 5,),
-                   Text(
-                    imageModel.user!.name.toString(),
-                    style: const TextStyle(color: Colors.white),
+                  // GetBuilder<ImageDataControllerImp>(
+                  //     builder: (imageDataControllerImp) {
+                  //   return IconButton(
+                  //       onPressed: () async {
+                  //         await imageDataControllerImp
+                  //             .setFav(imageDataControllerImp.imageModel);
+                  //       },
+                  //       icon: imageDataControllerImp.isFav(imageModel)
+                  //           ? const Icon(
+                  //               Icons.favorite_border,
+                  //               color: Colors.white,
+                  //             )
+                  //           : const Icon(
+                  //               Icons.favorite,
+                  //               color: Colors.red,
+                  //             ));
+                  // }),
+                  const SizedBox(
+                    width: 5,
+                  ),
+                  SizedBox(
+                    width: 140,
+                    child: Text(
+                      imageModel.user!.name.toString(),
+                      style: const TextStyle(color: Colors.white),
+                    ),
                   ),
                 ],
               )),

@@ -22,13 +22,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.9.0"
-  auto_animated:
-    dependency: "direct dev"
-    description:
-      name: auto_animated
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "3.1.0"
   badges:
     dependency: "direct dev"
     description:
@@ -200,20 +193,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.7"
-  flutter_polyline_points:
-    dependency: "direct dev"
-    description:
-      name: flutter_polyline_points
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.0"
-  flutter_svg:
-    dependency: "direct dev"
-    description:
-      name: flutter_svg
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.1.6"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -245,6 +224,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.2.0"
+  gallery_saver:
+    dependency: "direct dev"
+    description:
+      name: gallery_saver
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.3.2"
   geocoding:
     dependency: "direct dev"
     description:
@@ -308,34 +294,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.6.5"
-  google_maps_flutter:
-    dependency: "direct dev"
-    description:
-      name: google_maps_flutter
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.2.1"
-  google_maps_flutter_android:
-    dependency: transitive
-    description:
-      name: google_maps_flutter_android
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.3.3"
-  google_maps_flutter_ios:
-    dependency: transitive
-    description:
-      name: google_maps_flutter_ios
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.1.12"
-  google_maps_flutter_platform_interface:
-    dependency: transitive
-    description:
-      name: google_maps_flutter_platform_interface
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.2.4"
   google_sign_in:
     dependency: "direct dev"
     description:
@@ -371,13 +329,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.10.2"
-  grouped_list:
-    dependency: "direct dev"
-    description:
-      name: grouped_list
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.2.0"
   http:
     dependency: "direct dev"
     description:
@@ -490,6 +441,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
+  network_to_file_image:
+    dependency: "direct dev"
+    description:
+      name: network_to_file_image
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.0.1"
   octo_image:
     dependency: transitive
     description:
@@ -504,22 +462,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.2"
-  path_drawing:
-    dependency: transitive
-    description:
-      name: path_drawing
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.1"
-  path_parsing:
-    dependency: transitive
-    description:
-      name: path_parsing
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.1"
   path_provider:
-    dependency: transitive
+    dependency: "direct dev"
     description:
       name: path_provider
       url: "https://pub.dartlang.org"
@@ -574,13 +518,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.11.1"
-  petitparser:
-    dependency: transitive
-    description:
-      name: petitparser
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "5.1.0"
   platform:
     dependency: transitive
     description:
@@ -721,13 +658,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.1"
-  show_up_animation:
-    dependency: "direct dev"
-    description:
-      name: show_up_animation
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.0.0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -741,7 +671,7 @@ packages:
     source: hosted
     version: "1.9.0"
   sqflite:
-    dependency: "direct dev"
+    dependency: transitive
     description:
       name: sqflite
       url: "https://pub.dartlang.org"
@@ -768,13 +698,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
-  stream_transform:
-    dependency: transitive
-    description:
-      name: stream_transform
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.0.1"
   string_scanner:
     dependency: transitive
     description:
@@ -880,13 +803,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.2"
-  visibility_detector:
-    dependency: transitive
-    description:
-      name: visibility_detector
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.3.3"
   win32:
     dependency: transitive
     description:
@@ -901,13 +817,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.2.0+2"
-  xml:
-    dependency: transitive
-    description:
-      name: xml
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "6.1.0"
 sdks:
   dart: ">=2.18.2 <3.0.0"
   flutter: ">=3.3.0"

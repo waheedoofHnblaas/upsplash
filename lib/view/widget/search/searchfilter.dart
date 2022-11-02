@@ -10,7 +10,7 @@ class SearchFilter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<HomeImagesControllerImp>(builder: (controller) {
+    return GetBuilder<HomeImageControllerImp>(builder: (controller) {
       List<ImageModel> filterNames = controller.imagesList
           .where((element) =>
               element.user!.name.toString().toLowerCase().trim().contains(
@@ -25,8 +25,8 @@ class SearchFilter extends StatelessWidget {
           itemBuilder: (context, index) => InkWell(
             onTap: () {
               query != ''
-                  ? controller.goToItemDataPage(filterNames[index])
-                  : controller.goToItemDataPage(controller.imagesList[index]);
+                  ? controller.toData(filterNames[index])
+                  : controller.toData(controller.imagesList[index]);
             },
             child: ListTile(
               title: query != ''
@@ -35,8 +35,7 @@ class SearchFilter extends StatelessWidget {
                     )
                   : Text(
                       controller.imagesList[index].user!.name
-                              .toString() ??
-                          'name',
+                              .toString(),
                     ),
               trailing: query != ''
                   ? Text(
